@@ -1,0 +1,68 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
+---
+
+<Layout title="Features">
+	<section class="py-20 bg-background">
+		<div class="container mx-auto px-4">
+			<h1 class="text-4xl font-bold mb-8 text-center">SmartFlow Features</h1>
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<Card>
+					<CardHeader>
+						<CardTitle>Intelligent Automation</CardTitle>
+						<CardDescription>Streamline repetitive tasks</CardDescription>
+					</CardHeader>
+					<CardContent>
+						<p>Our AI-powered automation tools learn from your processes and optimize workflows automatically.</p>
+					</CardContent>
+				</Card>
+				<Card>
+					<CardHeader>
+						<CardTitle>Custom Workflows</CardTitle>
+						<CardDescription>Tailor-made for your business</CardDescription>
+					</CardHeader>
+					<CardContent>
+						<p>Create and modify workflows that perfectly align with your unique business processes.</p>
+					</CardContent>
+				</Card>
+				<Card>
+					<CardHeader>
+						<CardTitle>Real-time Analytics</CardTitle>
+						<CardDescription>Data-driven insights</CardDescription>
+					</CardHeader>
+					<CardContent>
+						<p>Get instant visibility into your operations with comprehensive dashboards and reports.</p>
+					</CardContent>
+				</Card>
+				<Card>
+					<CardHeader>
+						<CardTitle>Seamless Integrations</CardTitle>
+						<CardDescription>Connect your tools</CardDescription>
+					</CardHeader>
+					<CardContent>
+						<p>Easily integrate with popular business tools and custom APIs for a unified workflow.</p>
+					</CardContent>
+				</Card>
+				<Card>
+					<CardHeader>
+						<CardTitle>Mobile Access</CardTitle>
+						<CardDescription>Work from anywhere</CardDescription>
+					</CardHeader>
+					<CardContent>
+						<p>Access and manage your workflows on-the-go with our responsive mobile application.</p>
+					</CardContent>
+				</Card>
+				<Card>
+					<CardHeader>
+						<CardTitle>Advanced Security</CardTitle>
+						<CardDescription>Enterprise-grade protection</CardDescription>
+					</CardHeader>
+					<CardContent>
+						<p>Ensure your data is safe with our robust security measures and compliance standards.</p>
+					</CardContent>
+				</Card>
+			</div>
+		</div>
+	</section>
+</Layout>

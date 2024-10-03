@@ -1,0 +1,72 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Button } from "@/components/ui/button"
+import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
+---
+
+<Layout title="Pricing">
+	<section class="py-20 bg-background">
+		<div class="container mx-auto px-4">
+			<h1 class="text-4xl font-bold mb-8 text-center">Simple, Transparent Pricing</h1>
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+				<Card>
+					<CardHeader>
+						<CardTitle>Starter</CardTitle>
+						<CardDescription>For small teams and startups</CardDescription>
+					</CardHeader>
+					<CardContent>
+						<div class="text-4xl font-bold mb-4">$29<span class="text-lg font-normal">/month</span></div>
+						<ul class="space-y-2">
+							<li>Up to 5 users</li>
+							<li>Basic automation</li>
+							<li>Standard support</li>
+							<li>1 custom integration</li>
+						</ul>
+					</CardContent>
+					<CardFooter>
+						<Button class="w-full">Get Started</Button>
+					</CardFooter>
+				</Card>
+				<Card className="border-primary">
+					<CardHeader>
+						<CardTitle>Professional</CardTitle>
+						<CardDescription>For growing businesses</CardDescription>
+					</CardHeader>
+					<CardContent>
+						<div class="text-4xl font-bold mb-4">$99<span class="text-lg font-normal">/month</span></div>
+						<ul class="space-y-2">
+							<li>Up to 20 users</li>
+							<li>Advanced automation</li>
+							<li>Priority support</li>
+							<li>5 custom integrations</li>
+							<li>Analytics dashboard</li>
+						</ul>
+					</CardContent>
+					<CardFooter>
+						<Button class="w-full">Get Started</Button>
+					</CardFooter>
+				</Card>
+				<Card>
+					<CardHeader>
+						<CardTitle>Enterprise</CardTitle>
+						<CardDescription>For large organizations</CardDescription>
+					</CardHeader>
+					<CardContent>
+						<div class="text-4xl font-bold mb-4">Custom</div>
+						<ul class="space-y-2">
+							<li>Unlimited users</li>
+							<li>Custom automation</li>
+							<li>24/7 dedicated support</li>
+							<li>Unlimited integrations</li>
+							<li>Advanced analytics</li>
+							<li>On-premise option</li>
+						</ul>
+					</CardContent>
+					<CardFooter>
+						<Button class="w-full">Contact Sales</Button>
+					</CardFooter>
+				</Card>
+			</div>
+		</div>
+	</section>
+</Layout>

@@ -1,0 +1,48 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Card, CardContent } from "@/components/ui/card"
+---
+
+<Layout title="About Us">
+	<section class="py-20 bg-background">
+		<div class="container mx-auto px-4">
+			<h1 class="text-4xl font-bold mb-8 text-center">About SmartFlow</h1>
+			<div class="max-w-3xl mx-auto">
+				<p class="text-lg mb-8">SmartFlow is a leading provider of intelligent workflow solutions, dedicated to helping businesses streamline their operations and boost productivity. Our innovative platform combines cutting-edge technology with user-friendly design to deliver powerful automation tools that adapt to your unique needs.</p>
+				
+				<h2 class="text-2xl font-semibold mb-4">Our Mission</h2>
+				<p class="mb-8">To empower organizations of all sizes with smart, flexible, and efficient workflow solutions that drive growth and innovation.</p>
+				
+				<h2 class="text-2xl font-semibold mb-4">Our Team</h2>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+					<Card>
+						<CardContent className="pt-6">
+							<h3 class="font-semibold mb-2">John Doe</h3>
+							<p class="text-sm text-muted-foreground">CEO & Co-founder</p>
+						</CardContent>
+					</Card>
+					<Card>
+						<CardContent className="pt-6">
+							<h3 class="font-semibold mb-2">Jane Smith</h3>
+							<p class="text-sm text-muted-foreground">CTO & Co-founder</p>
+						</CardContent>
+					</Card>
+					<Card>
+						<CardContent className="pt-6">
+							<h3 class="font-semibold mb-2">Mike Johnson</h3>
+							<p class="text-sm text-muted-foreground">Head of Product</p>
+						</CardContent>
+					</Card>
+				</div>
+				
+				<h2 class="text-2xl font-semibold mb-4">Our Values</h2>
+				<ul class="list-disc list-inside mb-8">
+					<li>Innovation: Constantly pushing the boundaries of what's possible in workflow automation</li>
+					<li>Customer-Centric: Putting our clients' needs at the heart of everything we do</li>
+					<li>Collaboration: Fostering a culture of teamwork and open communication</li>
+					<li>Integrity: Maintaining the highest standards of honesty and ethical behavior</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+</Layout>

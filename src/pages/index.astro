@@ -1,0 +1,34 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Button } from "@/components/ui/button"
+---
+
+<Layout title="Welcome to SmartFlow">
+	<section class="py-20 bg-background">
+		<div class="container mx-auto px-4 text-center">
+			<h1 class="text-4xl md:text-6xl font-bold mb-6">Streamline Your Workflow with SmartFlow</h1>
+			<p class="text-xl mb-8 text-muted-foreground">Intelligent solutions for modern businesses</p>
+			<Button size="lg">Get Started</Button>
+		</div>
+	</section>
+
+	<section class="py-16 bg-secondary">
+		<div class="container mx-auto px-4">
+			<h2 class="text-3xl font-bold mb-8 text-center">Why Choose SmartFlow?</h2>
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+				<div class="bg-background p-6 rounded-lg shadow-md">
+					<h3 class="text-xl font-semibold mb-4">Efficiency</h3>
+					<p class="text-muted-foreground">Optimize your processes and save time with our intelligent workflows.</p>
+				</div>
+				<div class="bg-background p-6 rounded-lg shadow-md">
+					<h3 class="text-xl font-semibold mb-4">Flexibility</h3>
+					<p class="text-muted-foreground">Customize solutions to fit your unique business needs.</p>
+				</div>
+				<div class="bg-background p-6 rounded-lg shadow-md">
+					<h3 class="text-xl font-semibold mb-4">Integration</h3>
+					<p class="text-muted-foreground">Seamlessly connect with your existing tools and systems.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</Layout>
